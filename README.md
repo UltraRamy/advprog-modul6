@@ -5,3 +5,6 @@ Kita membuat fungs handle_connection. Fungsi ini bertugas untuk memproses koneks
 ## Commit 2 Reflection Notes
 Fungsi handle_connection membaca permintaan HTTP. Kemudian, server memuat file hello.html yang telah kita buat. File ini berisi pesan untuk dikirimkan sebagai respons. Respons kemudian dibangun dalam format HTTP. Respons ini dikirimkan kembali ke klien melalui koneksi TCP. Dengan demikian, server dapat mengirimkan halaman HTML.
 ![Commit 2 screen capture](image.png)
+
+## Commit 3 Reflection Notes
+Kita menambahkan kondisi pada fungsi handle_connection. Kondisi baru ini terletak pada nagian else{}. Bagian tersebut berfungsi untuk menangani kondisi saat sebuah halaman tidak ditemukan. Jika halaman tidak ditemukan, kita akan menampilkan halaman html yang sesuai. Halaman tersebut adalah halaman HTML yang kita simpan sebagai 404.html pada direktori projek. Halaman ini berguna untuk menampilkan pesan eror yang sesuai.
