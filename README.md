@@ -15,3 +15,6 @@ Kita ingin mencoba mensimulasikan respon yang lambat. Kita menggunakan sleep. Sl
 
 ## Commit 5 Reflection Notes
 Pada tahap ini, kita akan mencoba mengganti single thread server kita menjadi multithread. Tujuan penggunaan multithread adalah meningkatkan throughput. Pada kasus ini, kita menggunakan threadpool. Untuk implementasi multithread, kita menciptakan lib.rs pada direktori src. File ini akan menjadi tempat kita mengimplementasi threadpool. Setelah itu, kita akan mengimport lib.rs pada main.rs dengan menggunakan hello::Threadpool.
+
+## Commit Bonus Reflection Notes
+Tahap ini merupakan pengerjaan tahap bonus. Kita mengganti fungsi new pada lib.rs di direktori src. Fungsi baru yang kita akan implementasikan adalah build. Fungsi build akan mengembalikan Result. Fungsi build juga akan mengembalikan Err ketika thread kurang atau sama dengan 0. Setelah menerapkan fungsi build pada lib.rs kita dapat mengganti pemanggilan fungsi new pada variabel pool kita pada mian.rs menjadi build.
